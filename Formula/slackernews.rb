@@ -11,7 +11,7 @@ class Slackernews < Formula
   on_macos do
     if Hardware::CPU.intel?
       url "https://github.com/slackernews/cli/releases/download/v0.1.0/cli_0.1.0_Darwin_x86_64.tar.gz"
-      sha256 "b44b42bac7d7b0476ba848e0e6643cf8205ee9ced93dd02dcdf64f06a05c21c1"
+      sha256 "6e4d082e3790fe555e193e43229ce6a43ec1d9e39734094324db9a9c1144fb5b"
 
       define_method(:install) do
         bin.install "slackernews"
@@ -19,7 +19,7 @@ class Slackernews < Formula
     end
     if Hardware::CPU.arm?
       url "https://github.com/slackernews/cli/releases/download/v0.1.0/cli_0.1.0_Darwin_arm64.tar.gz"
-      sha256 "d680e93c0157eef9886dbf0f662c637c15f2c8f1618d3bf3bfb30c62976d3998"
+      sha256 "d3e2bf3a347853f7f85747fced517ec9f47c68be60ce32cad9309da1deb0f115"
 
       define_method(:install) do
         bin.install "slackernews"
@@ -30,14 +30,14 @@ class Slackernews < Formula
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
       url "https://github.com/slackernews/cli/releases/download/v0.1.0/cli_0.1.0_Linux_x86_64.tar.gz"
-      sha256 "51912526ef43c946c0db53f4825623a5187fedca3e0958599de0d3b7118e475b"
+      sha256 "06a76144c2f2f56d1fa2c50145a24f73629c053d951b9acdddbc04f887fe5c8c"
       define_method(:install) do
         bin.install "slackernews"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
       url "https://github.com/slackernews/cli/releases/download/v0.1.0/cli_0.1.0_Linux_arm64.tar.gz"
-      sha256 "3e5ac584aa47601787e366900f05c94e671cdf1a947b6dd33ddc6c8a47d2820e"
+      sha256 "03f96e4a1490be6ad264346d2e51ffed1fbfa97744d7f1992673b9cb517682db"
       define_method(:install) do
         bin.install "slackernews"
       end
